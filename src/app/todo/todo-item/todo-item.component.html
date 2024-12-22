@@ -1,0 +1,26 @@
+<section class="todo-item-container border rounded p-4">
+  <header>
+    <div>NEW TODO ITEM</div>
+  </header>
+  <div *ngIf="form" [formGroup]="form">
+    <div class="d-flex justify-content-end align-items-center">
+      <label class="me-2">Code:</label>
+      <input nz-input type="text" class="form-control w-50" [formControlName]="FORM_FIELDS.code"/>
+    </div>
+    <div class="d-flex justify-content-end align-items-center" >
+      <label class="me-2">Title:</label>
+      <input nz-input  type="text" class="form-control w-50" [formControlName]="FORM_FIELDS.title"/>
+    </div>
+    <div class="d-flex justify-content-end align-items-center" >
+      <label class="me-2">Description:</label>
+      <input nz-input  type="text" class="form-control w-50" [formControlName]="FORM_FIELDS.description"/>
+    </div>
+    <div class="d-flex justify-content-end align-items-center" >
+      <label class="me-2">Content:</label>
+      <input nz-input  type="text" class="form-control w-50" />
+    </div>
+    <div class="d-flex justify-content-end">
+      <button type="button" class="btn btn-primary" (click)="submit()">Save</button>
+    </div>
+  </div>
+</section>

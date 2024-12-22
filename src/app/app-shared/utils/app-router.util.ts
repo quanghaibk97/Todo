@@ -5,5 +5,6 @@ export const APP_ROUTER_UTILS = {
     planning: 'todo/planning',
     processing: 'todo/processing',
     complete: 'todo/complete',
+    item: 'todo/item'
   }
 }

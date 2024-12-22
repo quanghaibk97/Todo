@@ -5,6 +5,7 @@ import { AllComponent } from './all/all.component';
 import { PlanningComponent } from './planning/planning.component';
 import { ProcessingComponent } from './processing/processing.component';
 import { CompleteComponent } from './complete/complete.component';
+import { TodoItemComponent } from './todo-item/todo-item.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,13 @@ const routes: Routes = [
     component: CompleteComponent,
     data: {
       title: 'Complete'
+    },
+  },
+  {
+    path: APP_ROUTER_UTILS.todo.item,
+    component: TodoItemComponent,
+    data: {
+      title: 'Todo item'
     },
   }
 ];

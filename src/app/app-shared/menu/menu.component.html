@@ -1,8 +1,11 @@
 <header>
-  <ul class="nav-links">
-    <li><a routerLink="/all">All</a></li>
-    <li><a routerLink="/planning">Planning</a></li>
-    <li><a routerLink="/processing">Processing</a></li>
-    <li><a routerLink="/complete">Complete</a></li>
+  <div class="row add-todo-button">
+    <button type="button" (click)="addTodo()">Add todo</button>
+  </div>
+  <ul>
+    <li><a routerLink="/todo/all">All</a></li>
+    <li><a routerLink="/todo/planning">Planning</a></li>
+    <li><a routerLink="/todo/processing">Processing</a></li>
+    <li><a routerLink="/todo/complete">Complete</a></li>
   </ul>
 </header>
